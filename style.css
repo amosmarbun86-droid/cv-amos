@@ -57,7 +57,7 @@ nav {
     border-radius: 50%;
     border: 4px solid var(--primary);
     box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 
     /* KODE UTAMA UNTUK MEMPERBAIKI FOTO TERPOTONG: */
     object-fit: contain;     /* Memastikan seluruh foto masuk ke dalam lingkaran */
