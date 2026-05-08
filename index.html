@@ -1,307 +1,99 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Amos | Logistic Staff</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Arial, sans-serif;
-background:#0f172a;
-color:white;
-}
-
-/* NAVBAR */
-
-nav{
-background:#020617;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
-}
-
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
-/* HERO */
-
-.hero{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(135deg,#020617,#1e293b);
-}
-
-.profile{
-width:190px;
-height:190px;
-border-radius:50%;
-border:6px solid #38bdf8;
-object-fit:cover;
-object-position:center 25%;
-box-shadow:0 0 30px rgba(56,189,248,0.6);
-margin-bottom:20px;
-}
-
-/* BUTTON */
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#38bdf8;
-color:black;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#0ea5e9;
-transform:scale(1.05);
-}
-
-/* CONTAINER */
-
-.container{
-max-width:1000px;
-margin:auto;
-padding:25px;
-}
-
-/* CARD */
-
-.card{
-background:#1e293b;
-padding:25px;
-margin-top:20px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-}
-
-/* TITLE */
-
-h2{
-color:#38bdf8;
-margin-bottom:10px;
-}
-
-/* SKILL */
-
-.skill{
-margin-top:15px;
-}
-
-.bar{
-background:#334155;
-height:10px;
-border-radius:10px;
-overflow:hidden;
-}
-
-.bar span{
-display:block;
-height:10px;
-background:#38bdf8;
-animation:grow 2s ease;
-}
-
-@keyframes grow{
-from{width:0;}
-}
-
-/* TIMELINE */
-
-.timeline{
-border-left:3px solid #38bdf8;
-padding-left:20px;
-margin-top:15px;
-}
-
-.timeline-item{
-margin-bottom:15px;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 18px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 10px 20px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.whatsapp:hover{
-transform:scale(1.1);
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:30px;
-color:#94a3b8;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amos | Logistic Professional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <nav>
-
-<a href="#profil">Profil</a>
-<a href="#pengalaman">Pengalaman</a>
-<a href="#skill">Keahlian</a>
-<a href="#kontak">Kontak</a>
-
+    <div class="nav-container">
+        <a href="#profil">Profil</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#skill">Keahlian</a>
+        <a href="#kontak">Kontak</a>
+    </div>
 </nav>
 
-<section class="hero">
+<header class="hero">
+    <img src="foto-amos.png" alt="Amos" class="profile">
+    <h1>Amos</h1>
+    <p class="tagline">Staff Logistik / Warehouse Professional</p>
+    <a href="cv-amos.pdf" class="btn" download>Unduh CV (PDF)</a>
+</header>
 
-<img src="foto-amos.png" class="profile">
-
-<h1>Amos</h1>
-
-<p>Staff Logistik / Warehouse</p>
-
-<a class="btn" href="cv-amos.pdf" download>Download CV</a>
-
+<section id="profil">
+    <div class="card">
+        <h2>Tentang Saya</h2>
+        <p>
+            Profesional di bidang logistik dan pergudangan dengan pengalaman kerja selama 2 tahun. 
+            Ahli dalam mengoptimalkan rantai pasok, manajemen stok gudang (Stock Opname), 
+            serta administrasi logistik yang presisi. Berdedikasi tinggi pada efisiensi operasional dan akurasi data.
+        </p>
+    </div>
 </section>
 
-<div class="container">
+<section id="pengalaman">
+    <div class="card">
+        <h2>Pengalaman Kerja</h2>
+        <div class="experience-item">
+            <div class="exp-header">
+                <img src="logo-ne.png" alt="Logo NE" class="company-logo">
+                <div>
+                    <h3>Nusantara Express Kilat (SPX Express)</h3>
+                    <p class="job-title">Staff Logistik | 2 Tahun</p>
+                </div>
+            </div>
+            <ul>
+                <li>Mengelola alur masuk dan keluar barang dengan tingkat akurasi tinggi.</li>
+                <li>Melaksanakan audit stok dan <strong>Stock Opname</strong> berkala untuk meminimalisir selisih inventaris.</li>
+                <li>Berkoordinasi dengan tim operasional dan ekspedisi guna menjamin pengiriman tepat waktu.</li>
+                <li>Mengontrol persediaan gudang menggunakan sistem administrasi yang terstruktur.</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-<div class="card" id="profil">
+<section id="skill">
+    <div class="card">
+        <h2>Keahlian Teknis</h2>
+        <div class="skill-grid">
+            <div class="skill-item">
+                <span>Manajemen Gudang</span>
+                <div class="bar"><span style="width: 95%"></span></div>
+            </div>
+            <div class="skill-item">
+                <span>Stock Control & Inventory</span>
+                <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill-item">
+                <span>Microsoft Excel (Data Entry)</span>
+                <div class="bar"><span style="width: 85%"></span></div>
+            </div>
+            <div class="skill-item">
+                <span>Administrasi Logistik</span>
+                <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<h2>Profil Profesional</h2>
-
-<p>
-Profesional di bidang logistik dengan pengalaman dalam pengelolaan stok gudang,
-stock opname, distribusi barang, serta administrasi logistik.
-Terbiasa bekerja secara teliti, disiplin, dan mampu bekerja
-secara tim maupun individu.
-</p>
-
-</div>
-
-<div class="card" id="pengalaman">
-
-<h2>Pengalaman Kerja</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<div style="display:flex;align-items:center;gap:15px;margin-bottom:10px;">
-
-<img src="logo-ne.png" style="width:50px">
-
-<div>
-<strong>Nusantara Express Kilat</strong><br>
-Staff Logistik
-</div>
-
-</div>
-
-<ul>
-
-<li>Mengelola keluar masuk barang</li>
-<li>Pencatatan stok dan stock opname</li>
-<li>Mengontrol persediaan barang di gudang</li>
-<li>Koordinasi dengan tim operasional</li>
-<li>Memastikan pengiriman tepat waktu</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<div class="card" id="skill">
-
-<h2>Keahlian</h2>
-
-<div class="skill">
-Manajemen Gudang
-<div class="bar"><span style="width:90%"></span></div>
-</div>
-
-<div class="skill">
-Stock Control
-<div class="bar"><span style="width:85%"></span></div>
-</div>
-
-<div class="skill">
-Microsoft Excel
-<div class="bar"><span style="width:80%"></span></div>
-</div>
-
-<div class="skill">
-Administrasi Logistik
-<div class="bar"><span style="width:85%"></span></div>
-</div>
-
-</div>
-
-<div class="card" id="kontak">
-
-<h2>Kontak</h2>
-
-<p>📞 0857-7236-6047</p>
-
-<p>✉️ amosm812@gmail.com</p>
-
-<p>📍 Sipoholon, Tapanuli Utara</p>
-
-</div>
-
-</div>
-
-<a class="whatsapp" href="https://wa.me/6285772366047">
-
-Chat WhatsApp
-
-</a>
+<section id="kontak">
+    <div class="card contact-card">
+        <h2>Hubungi Saya</h2>
+        <p>Siap berkontribusi untuk perusahaan Anda.</p>
+        <div class="contact-links">
+            <a href="mailto:amosm812@gmail.com" class="contact-btn">📧 Email</a>
+            <a href="https://wa.me/6285772366047" class="contact-btn">💬 WhatsApp</a>
+        </div>
+    </div>
+</section>
 
 <footer>
-
-© 2026 Amos | CV Website
-
+    <p>&copy; 2026 Amos. Dibuat dengan dedikasi.</p>
 </footer>
 
 </body>
