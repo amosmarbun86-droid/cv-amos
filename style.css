@@ -62,7 +62,7 @@ nav {
     /* KODE UTAMA UNTUK MEMPERBAIKI FOTO TERPOTONG: */
     object-fit: contain;     /* Memastikan seluruh foto masuk ke dalam lingkaran */
     background-color: white; /* Memberi latar putih agar serasi dengan foto Anda */
-    padding: 3px;            /* Memberi sedikit ruang agar kepala tidak mepet ke garis */
+    padding: 5px;            /* Memberi sedikit ruang agar kepala tidak mepet ke garis */
 }
 
 
