@@ -58,15 +58,14 @@ nav {
     border: 4px solid var(--primary);
     box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
     margin-bottom: 20px;
-    
-    /* PERBAIKAN DI SINI: */
-    /* Mengubah object-fit agar foto tidak terpotong */
-    object-fit: contain; 
-    /* Mengubah warna latar belakang bingkai menjadi putih agar serasi dengan latar foto */
-    background-color: white; 
-    /* Menambahkan padding sedikit agar foto tidak menempel bingkai */
-    padding: 5px; 
+
+    /* KODE UTAMA UNTUK MEMPERBAIKI FOTO TERPOTONG: */
+    object-fit: contain;     /* Memastikan seluruh foto masuk ke dalam lingkaran */
+    background-color: white; /* Memberi latar putih agar serasi dengan foto Anda */
+    padding: 5px;            /* Memberi sedikit ruang agar kepala tidak mepet ke garis */
 }
+
+
 
 h1 { font-size: 2.5rem; margin-bottom: 10px; letter-spacing: 1px; }
 .tagline { color: var(--primary); font-weight: 300; margin-bottom: 30px; }
